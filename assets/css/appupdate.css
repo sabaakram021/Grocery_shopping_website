@@ -1,0 +1,55 @@
+.appupdate {
+    position: fixed;
+    opacity: 0;
+    bottom: -100%;
+    width: 100%;
+    background: var(--bg-clr);
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 5px #00000055;
+    padding: 20px;
+    z-index: 99999;
+    transition: all .4s ease-in-out;
+}
+
+.appupdate-active {
+    opacity: 1;
+    bottom: 0;
+}
+
+.app_photo {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.app_photo img {
+    width: 100%;
+}
+
+.update-para {
+    margin: 5px auto;
+}
+
+.update-para p {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+
+.updatebtn {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: none;
+}
+
+.updatebtn1 {
+    background: var(--main-clr);
+    color: #fff;
+}
+
+.updatebtn2 {
+    background: var(--bg-clr);
+    color: #000;
+    border: 1px solid var(--main-clr);
+}

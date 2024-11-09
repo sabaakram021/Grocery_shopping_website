@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: var(--bg-clr);
+}
+
+.wrapper-overlay {
+    transition: all .4s ease-in-out;
+}
+
+.wrapper-overlay-active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    z-index: 10;
+}
+
+.header {
+    padding: var(--pad);
+    position: relative;
+}
+
+.back ,.edit{
+    font-size: 25px;
+    /* font-weight: 300; */
+    color: #514F4F;
+
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.main {
+    padding: var(--pad2);
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+.input-fields{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.input-fields p{
+    text-align: center;
+}
+.input-fields label{
+    margin: 20px auto;
+}
+.input-fields label i{
+    font-size: 200px;
+    /* display: block; */
+    color: #A8AFB9;
+   
+   
+}
+.input-field {
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px -1px #3232470D;
+    color: #A8AFB9;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.input-field i {
+    font-size: 20px;
+}
+
+.input-field input ,.input-field select{
+    background: transparent;
+    width: 100%;
+    padding: 2px;
+    border: none;
+    outline: none;
+}
+
+.input-field input::placeholder ,.input-field select::placeholder{
+    color: #A8AFB9;
+    font-weight: 600;
+}
+
+.Apply-btn button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: var(--main-clr);
+    border-radius: 10px;
+}
+.Apply-btn{
+    padding-bottom: 20px;
+}

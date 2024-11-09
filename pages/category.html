@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <!-- <link rel="stylesheet" href="../assets/css/seller-category/seller-category.css"> -->
+    <link rel="stylesheet" href="../assets/css/category/category.css">
+    
+    <!-- <link rel="stylesheet" href="../assets/css/sort.css"> -->
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <!-- <link rel="stylesheet" href="../assets/css/"> -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="loder">
+            <div class="loader">
+
+            </div>
+        </div>
+
+        <!-- header -->
+        <div class="sellerCategory-header flex space-between">
+            <div class="flex gap-5">
+                <i class="ri-arrow-left-line back"></i>
+                <p class="cat-name">All Category</p>
+            </div>
+
+            <div class="search">
+                <!-- <i class="ri-search-line"></i> -->
+            </div>
+        </div>
+
+
+        <!-- main content -->
+
+        <div class="main">
+
+
+            <div class="leftside flex flex-col categorygrid gap-10 justify-start">
+
+
+                <!-- <div class="subcategory-box flex ">
+                    <div class="subcatactive-div "></div>
+                    <div class="sub-box flex flex-col gap-2">
+                        <div class="sub-box-img">
+                            <img src="../assets/images/subcategory/1.png" alt="img">
+                        </div>
+                        <p class="sub-cat-name">rice</p>
+                    </div>
+                </div> -->
+
+
+
+
+
+
+            </div>
+
+            <!-- product section -->
+            <div class="rightside">
+
+                <div class="top-category">
+                    <div class="topCat-header">
+                        <p>Super Category</p>
+                    </div>
+
+                    <div class="topCatGrid supercategorygrid flex justify-start  flex-warp">
+                        
+
+                      
+
+                       
+                    </div>
+                </div>
+
+                <div class="top-category">
+                    <div class="topCat-header">
+                        <p>Top Category</p>
+                    </div>
+                    <div class="topCatGrid topcategorygrid flex justify-start  flex-warp">
+                        
+                    </div>
+                </div>
+
+                <div class="top-category">
+                    <div class="topCat-header">
+                        <p>Daily Deals Category</p>
+                    </div>
+                    <div class="topCatGrid shopbycatgrid flex justify-start  flex-warp">
+                       
+                       
+                    </div>
+                </div>
+
+             
+
+            </div>
+        </div>
+
+
+
+
+
+        <footer class="flex space-between">
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-home-3-line"></i>
+                <p>Home</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-grid-fill"></i>
+                <p>Category</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-service-line"></i>
+<p>service</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-heart-line"></i>
+                <p>Wishlist</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2">
+                 <div class="count">0</div>
+                <i class="ri-shopping-cart-line"></i>
+                <p>Cart</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        $(".sort").click(() => {
+            $(".wrapper-overlay").addClass("wrapper-overlay-active");
+            $(".sort-section-body").addClass("sort-active");
+        })
+        $(".allcat").click(() => {
+            $(".wrapper-overlay").addClass("wrapper-overlay-active");
+            $(".allCatlist").addClass("allCatlist-active");
+        })
+        $(".cancelsort ,.cancelcat").click(() => {
+            $(".wrapper-overlay").removeClass("wrapper-overlay-active");
+            $(".sort-section-body").removeClass("sort-active");
+            $(".allCatlist").removeClass("allCatlist-active");
+        })
+
+        loadCategory() ;loadSuperCategory(); loadTopCategory(); loadDailyDealsCategory();
+        loadCartCount();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: var(--bg-clr);
+}
+
+.wrapper-overlay {
+    transition: all .4s ease-in-out;
+}
+
+.wrapper-overlay-active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    z-index: 10;
+}
+
+.header {
+    padding: var(--pad);
+    position: relative;
+}
+
+.back {
+    font-size: 25px;
+    /* font-weight: 300; */
+    color: #514F4F;
+
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.main {
+    padding: var(--pad2);
+}
+
+.order-box {
+    padding: 10px 0px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.order-img {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background: #fff; */
+    box-shadow: 0px 0px 2px 0px #00000040;
+}
+
+.order-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-info .name {
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    max-width: 180px;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+.order-info .price {
+    font-size: 12px;
+    font-weight: 500;
+    color: #868696;
+}
+
+.order-info .size p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1A172C;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background: #1A172C;
+    border-radius: 50%;
+}
+
+.order-right {
+    gap: 20px;
+    padding-right: 2px;
+    min-width: 70px;
+}
+
+.delelte i {
+    color: #868696;
+    font-size: 16px;
+}
+
+.btn-section i {
+    font-size: 16px;
+    color: #1A172C;
+}
+
+.btn-section p {
+    font-size: 12px;
+    color: #1A172C;
+}
+
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: var(--pad);
+    background: #fff;
+}
+
+.cart {
+    margin-bottom: 20px;
+}
+
+.cart-fotter-title {
+    font-family: Be Vietnam Pro;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8F8F9C;
+    min-width: 55px;
+}
+
+.total-title {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 50px;
+    text-align: right;
+}
+
+.Shipping {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A172C;
+    min-width: 50px;
+    text-align: right;
+}
+
+.line {
+    width: 200px;
+    border: 1px dashed #E5E4E7;
+    /* border: 1px dashed red; */
+
+}
+
+.cart-fotter-coupon {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #1A172C;
+}
+
+.select {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    color: #4B46B8;
+
+}
+
+hr {
+    background: #8F8F9C;
+    margin-bottom: 20px;
+}
+
+.footer-btn button {
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    background: #0EB96B;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.grandTotatlTitle,
+.grandTotal {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+
+
+}

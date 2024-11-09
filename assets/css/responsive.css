@@ -1,0 +1,185 @@
+/*  website-footer */
+
+.website-footer {
+    width: 100%;
+    background: #000;
+    padding: 5% 5% 15px 5%;
+    color: #fff;
+}
+
+.website-footer-left img {
+    width: 200px;
+}
+
+.website-footer a {
+    font-size: 1rem;
+    color: var(--main-clr);
+    text-underline-offset: 3px;
+    transition: all .4s ease-in-out;
+}
+
+.website-footer a:hover {
+    transform: translateX(5px);
+    color: #2b7bc3;
+}
+
+.social-media-icon {
+    margin-top: 20px;
+}
+
+.social-media-icon a {
+    font-size: 2rem;
+    color: #2b7bc3;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+.social-media-icon a:hover {
+    transform: translateX(0px);
+}
+
+
+
+
+.social-media-icon a:nth-child(1)::after {
+    content: "Facebook";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%) scale(.1);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    color: var(--primary-clr);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.social-media-icon a:nth-child(1):hover::after {
+    top: -20px;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.social-media-icon a:nth-child(2)::after {
+    content: "Instagram";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%) scale(.1);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    color: var(--primary-clr);
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.social-media-icon a:nth-child(2):hover::after {
+    top: -20px;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.social-media-icon a:nth-child(3)::after {
+    content: "Twitter";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%) scale(.1);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    color: var(--primary-clr);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.social-media-icon a:nth-child(3):hover::after {
+    top: -20px;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.social-media-icon a:nth-child(4)::after {
+    content: "Linkedin";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%) scale(.1);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    color: var(--primary-clr);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.social-media-icon a:nth-child(4):hover::after {
+    top: -20px;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+
+
+
+.developedby {
+    width: 100%;
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+.developedby a {
+    color: #02bba9;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.up {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    background: var(--main-clr);
+}
+
+.up a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.up a:hover {
+    transform: none;
+    transform: translateY(-10px);
+}
+
+.downloadApp {
+    margin-top: 20px;
+    padding: 8px 32px;
+    /* border: 2px solid var(--main-clr); */
+    border-radius: 10px;
+    background: var(--main-clr);
+    color: #000;
+}
+
+.downloadApp a {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+.contact-us {
+    margin-bottom: 10px;
+}
+
+.contact-us i {
+    color: var(--main-clr);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-us a {
+    color: #2b7bc3;
+    font-size: .9rem;
+    cursor: pointer;
+    text-decoration: none;
+}

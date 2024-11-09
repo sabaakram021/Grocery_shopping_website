@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: var(--bg-clr);
+}
+
+.wrapper-overlay {
+    transition: all .4s ease-in-out;
+}
+
+.wrapper-overlay-active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    z-index: 10;
+}
+
+.header {
+    padding: var(--pad);
+    position: relative;
+}
+
+.back {
+    font-size: 25px;
+    /* font-weight: 300; */
+    color: #514F4F;
+
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.main {
+    padding: var(--pad2);
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.order-history{
+    margin-bottom: 30px;
+}
+.order-box {
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.order-img {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background: #fff; */
+    box-shadow: 0px 0px 2px 0px #00000040;
+}
+
+.order-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-info .name {
+    font-size: 15px;
+    font-weight: 500;
+    width: 140px;
+    max-width: 140px;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+.order-info .price {
+    font-size: 12px;
+    font-weight: 500;
+    color: #868696;
+}
+
+.order-info .size p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1A172C;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background: #1A172C;
+    border-radius: 50%;
+}
+
+.orderheader {
+    font-size: 12px;
+    font-weight: 400;
+    color: #1A172C;
+}
+
+.orderstatus {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--main-clr);
+}
+
+.shipping {
+    width: 100%;
+}
+
+.shipping-line {
+    flex-basis: 1;
+    width: 100%;
+    /* height: 2px; */
+    border: 1.5px dashed #E5E4E7;
+}
+
+.shipping p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8F8F9C;
+}
+
+.delivery-charge {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #1A172C !important;
+}
+
+.totalamt-title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1A172C;
+}
+
+.totalitems {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.grandtotal {
+    font-size: 18px;
+    font-weight: 500;
+}
+.order-history{
+    padding-bottom: 5px;
+    border-bottom: 2px dashed gray;
+}
+.total-product{
+   display: none;
+}
+.showTotalproduct{
+    display: block;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+
+
+.order-box{
+    align-items: flex-end;
+}
+.order-right-lower button{
+    background: transparent;
+    border: none;
+}
+.order-right-lower button i{
+   color: #DEDDDD;
+}
+
+.israted i{
+    color: #FFCC05!important;
+}

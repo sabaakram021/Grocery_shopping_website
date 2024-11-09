@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <link rel="stylesheet" href="../assets/css/seller-category/seller-category.css">
+    <link rel="stylesheet" href="../assets/css/sort.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/popup.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <!-- header -->
+        <div class="sellerCategory-header flex space-between">
+            <div class="flex gap-5">
+                <i class="ri-arrow-left-line back"></i>
+                <p class="cat-name"> </p>
+            </div>
+
+            <div class="search" onclick="goToCatProSearch()">
+                <i class="ri-search-line"></i>
+            </div>
+        </div>
+
+
+        <!-- main content -->
+
+        <div class="main">
+
+
+            <div class="leftside subcategorygrid flex flex-col gap-10 justify-start">
+
+
+
+
+
+            </div>
+
+            <!-- product section -->
+            <div class="rightside">
+
+                <div class="right-header flex space-between">
+
+                    <!--sort section  -->
+
+                    <div class="sort-section-body">
+                        <div class="sort-section">
+
+                            <div class="sort-section-header flex space-between">
+                                <p>Sort</p>
+                                <i class="ri-close-large-line cancelsort"></i>
+                            </div>
+                            <div class="select-sort">
+
+                                <div class="sortby flex space-between">
+                                    <div class="flex gap-5">
+                                        <p>Price :</p>
+                                        <p>Low To High</p>
+                                    </div>
+
+                                    <div class="sort-circle1 flex" onclick="sortProduct('ltoh')">
+                                        <div class="sort-circle2 ltoh">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="sortby flex space-between" >
+                                    <div class="flex gap-5">
+                                        <p>Price :</p>
+                                        <p>High To Low</p>
+                                    </div>
+
+                                    <div class="sort-circle1 flex" onclick="sortProduct('htol')">
+                                        <div class="sort-circle2 htol">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sortby flex space-between">
+                                    <div class="flex gap-5">
+                                        <p>Name :</p>
+                                        <p>A To Z</p>
+                                    </div>
+
+                                    <div class="sort-circle1 flex" onclick="sortProduct('atoz')">
+                                        <div class="sort-circle2 atoz">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sortby flex space-between">
+                                    <div class="flex gap-5">
+                                        <p>Name :</p>
+                                        <p>Z To A</p>
+                                    </div>
+
+                                    <div class="sort-circle1 flex" onclick="sortProduct('ztoa')">
+                                        <div class="sort-circle2 ztoa">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--  all category list-->
+
+                    <div class="allCatlist">
+                        <div class="allcatheader flex space-between">
+                            <p>All Category</p>
+                            <i class="ri-close-large-line cancelcat"></i>
+                        </div>
+
+                        <!-- <div class="catlist flex space-between">
+                            <p>Category1</p>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="catlist flex space-between">
+                            <p>Category2</p>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="catlist flex space-between">
+                            <p>Category3</p>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="catlist flex space-between">
+                            <p>Category4</p>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div> -->
+                    </div>
+
+
+
+
+                    <div class="sort flex gap-5">
+                        <i class="ri-arrow-up-down-fill"></i>
+                        <p>Sort</p>
+                        <i class="ri-arrow-down-s-fill"></i>
+                    </div>
+
+                    <div class="allcat flex gap-5">
+                        <p>Category</p>
+                        <i class="ri-arrow-down-s-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cat-warpper">
+                    <div class="wrapper-overlay"></div>
+
+                    <div class="category-banner">
+                       
+                    </div>
+
+                    <div class="newly-launch-grid categoryProductGrid flex space-between flex-warp gap-10">
+
+                        <!-- <div class="newly-launch-product product-box">
+                            <div class="newly-launch-product-img flex">
+                                <img src="../assets/images/product/o1.png" alt="">
+                                <div class="best-offer">
+
+                                    <p>20%</p>
+                                    <p>OFF</p>
+
+                                </div>
+                            </div>
+                            <div class="newly-launch-product-name">
+                                <p>Ladies hand mini bag Itlian designerrrrrr</p>
+                            </div>
+                            <div class="newly-launch-product-rating-qty flex gap-10 justify-start">
+                                <p>1 piece</p>
+
+                                <div class="flex rating">
+                                    <p>4.2</p>
+                                    <i class="ri-star-s-fill israting"></i>
+                                    <i class="ri-star-s-fill israting"></i>
+                                    <i class="ri-star-s-fill israting"></i>
+                                    <i class="ri-star-s-fill israting"></i>
+                                    <i class="ri-star-s-fill israting"></i>
+                                </div>
+                            </div>
+                            <div class="newly-launch-product-price flex space-between">
+                                <div class="flex gap-10">
+                                    <p>₹ 999</p>
+
+                                    <p class="newly-fake-price"><del>₹ 12000</del></p>
+                                </div>
+
+                                <div>
+                                    <button class="addtocart">Add</button>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <footer class="flex space-between">
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-home-3-line"></i>
+                <p>Home</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-grid-fill"></i>
+                <p>Category</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-service-line"></i>
+<p>service</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-heart-line"></i>
+                <p>Wishlist</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2">
+                 <div class="count">0</div>
+                <i class="ri-shopping-cart-line"></i>
+                <p>Cart</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+  <!-- popup -->
+
+  <div class="popup">
+
+  </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        $(".sort").click(() => {
+            $(".wrapper-overlay").addClass("wrapper-overlay-active");
+            $(".sort-section-body").addClass("sort-active");
+        })
+        $(".allcat").click(() => {
+            $(".wrapper-overlay").addClass("wrapper-overlay-active");
+            $(".allCatlist").addClass("allCatlist-active");
+        })
+        $(".cancelsort ,.cancelcat").click(() => {
+            $(".wrapper-overlay").removeClass("wrapper-overlay-active");
+            $(".sort-section-body").removeClass("sort-active");
+            $(".allCatlist").removeClass("allCatlist-active");
+        })
+
+        // function call start
+
+        loadCategoryItem();
+        loadCartCount();
+    </script>
+</body>
+
+</html>

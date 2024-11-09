@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owlcarousel -->
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <link rel="stylesheet" href="../assets/css/store/store.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="store-header flex space-between">
+            <div class="flex gap-2">
+                <i class="ri-arrow-left-line back"></i>
+                <p class="store-name">Bharat Store</p>
+            </div>
+
+            <div class="search">
+                <!-- <i class="ri-search-line"></i> -->
+            </div>
+        </div>
+        <!-- category -->
+        <!-- <div class="vendor-category sellercatgrid flex justify-start gap-10  items-start ">
+
+
+
+
+        </div> -->
+
+        <!-- uppper banner -->
+
+        <div class="upper-banner sellerbannergrid owl-carousel owl-theme">
+
+        </div>
+
+        <!-- best deal for you -->
+
+        <div class="best-deal bestdealgriddiv">
+            <div class="best-deal-header ">
+                <h3 class="header">Explore all products</h3>
+            </div>
+
+            <div class="newly-launch-grid bestdealgrid flex justify-start gap-10">
+
+                
+
+
+            </div>
+
+        </div>
+
+
+        <!-- best selling -->
+
+        <div class="best-deal bestsellinggriddiv">
+            <div class="best-deal-header ">
+                <!-- <h3 class="header">Best Selling</h3> -->
+            </div>
+
+            <div class="newly-launch-grid bestsellinggrid  flex justify-start gap-10">
+
+                
+               
+
+
+            </div>
+
+        </div>
+
+
+        <!-- lower banner -->
+
+        <div class="lower-bannner owl-carousel owl-theme sellerlowerbannergrid">
+            <img src="../assets/images/banner/s2.png" alt="img">
+        </div>
+
+        <!-- popular product -->
+
+        <div class="popular-product topratedgriddiv">
+            <div class="popular-product-header">
+                <!-- <h3 class="header">Popular Product</h3> -->
+            </div>
+
+            <div class="newly-launch-grid topratedgrid flex space-between flex-warp gap-10">
+
+        
+            </div>
+
+        </div>
+
+
+        <footer class="flex space-between">
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-home-3-line"></i>
+                <p>Home</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-grid-fill"></i>
+                <p>Category</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-service-line"></i>
+<p>service</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-heart-line"></i>
+                <p>Wishlist</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2">
+                 <div class="count">0</div>
+                <i class="ri-shopping-cart-line"></i>
+                <p>Cart</p>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        loadStoreDetail();
+        // loadSellerCategory();
+        loadSellerUpperBanner();
+        loadSellerBestDeal();
+        // loadSellerBestSelling();
+        loadSellerLowerBanner();
+        // loadSellerPopuplarProduct();
+        loadCartCount();
+    </script>
+</body>
+
+</html>

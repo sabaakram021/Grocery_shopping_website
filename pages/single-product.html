@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owlcarousel -->
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <link rel="stylesheet" href="../assets/css/singleProduct/single-product.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="stylesheet" href="../assets/css/popup.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="loder">
+            <div class="loader">
+
+            </div>
+        </div>
+
+
+        <div class="header " onclick="history.back()">
+            <i class="ri-arrow-left-s-line "></i>
+        </div>
+
+        <div class="main">
+
+            <div class="productimg-grid owl-carousel owl-theme">
+                <!-- <div class="productimg">
+                    <img src="../assets/images/product/s3.png" alt="img">
+                </div> -->
+                <!-- <div class="productimg">
+                    <img src="../assets/images/product/s3.png" alt="img">
+                </div>
+                <div class="productimg">
+                    <img src="../assets/images/product/s3.png" alt="img">
+                </div> -->
+            </div>
+
+            <div class="multiimg">
+                <!-- <div class="multiimg-box">
+                    <img src="../assets/images/product/o1.png" alt="" srcset="">
+                </div> -->
+            </div>
+
+
+            <div class="product-info">
+                <div class="product-size flex justify-start gap-10">
+                    <p class="product-price">₹ <span>210</span></p>
+                    <p class="product-fake-price"> <del>₹200</del></p>
+                    <p class="product-weight">5kg</p>
+                </div>
+
+                <div class="pro-name flex space-between">
+                    <p>Aashirwaad atta </p>
+
+                    <div class="whislistbtndiv">
+                        <!-- <i class="ri-heart-3-fill"></i> -->
+                    </div>
+                </div>
+
+                <div class="pro-rating flex justify-start gap-2">
+                    <div class="proratingdiv">
+
+                    </div>
+
+
+                    <div class="flex justify-start gap-2">
+                        <p class="ratingval">4.2</p>
+                        <p>Rating</p>
+                    </div>
+
+                </div>
+
+                <div class="pro-descp">
+                    <h3>Description</h3>
+                    <p>Want to prepare soft, melt-in-the-mouth rotis for you and your family? Aashirvaad Shudh Chakki
+                        Atta is your answer! It contains the goodness of whole wheat,and is rich in dietary fibre and
+                        nutrients. Made using a 4-Step Advantage Process, Aashirvaad Shudh Chakki Atta undergoes
+                        sourcing, cleaning, grinding and packaging through a highly advanced mechanized process.</p>
+                </div>
+
+                <div class="pro-varrient flex space-between sizeVarientdiv">
+                    <p class="varient-title size-varient-title">Size</p>
+
+                    <div class="flex gap-10">
+                        <p class="svarientdetail varrrient-choose"></p>
+                        <div class="flex gap-10 varrrient sizeVarient">
+
+                            <p>10 kg</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-varrient flex space-between weightvarientdiv">
+                    <p class="varient-title weight-varient-title">Weight</p>
+
+                    <div class="flex gap-10">
+                        <div class="woriginal">
+                            <p>3</p>
+                        </div>
+                        <div class="flex gap-10 varrrient weightvarient">
+                            <p>10kg</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="pro-varrient flex space-between colorvarientdiv">
+                    <p class="varient-title color-varient-title">Color</p>
+                    <div class="flex gap-10 varrrient colorvarient">
+                        <!-- <p class="varrrient-choose">5 kg</p> -->
+                        <p>Red</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="price-section">
+                <p class="price-head">Price</p>
+
+                <div class="flex space-between">
+                    <h3 class="total">₹ <span class="stotal">210</span></h3>
+
+                    <div class="flex gap-15 plusminusbutton">
+                        <div class="flex" onclick="singProDec()">
+                            <i class="ri-subtract-line"></i>
+                        </div>
+                        <p class="snop">1</p>
+                        <div class="flex" onclick="singProInc()">
+                            <i class="ri-add-line"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="addtocartbtn">
+                    <!-- <button>Add To Cart</button> -->
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- similar product  -->
+
+        <div class="similar-product">
+            <div class="similar-product-header">
+                <p>Similar Product</p>
+            </div>
+
+            <div class="similar-product-grid flex justify-start gap-10">
+
+            </div>
+        </div>
+
+
+
+
+        <div class="botom-gap">
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- popup -->
+
+    <div class="popup">
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+
+        loadSingleProductimg();
+        loadSingleProduct();
+        loadSingleProductVarient();
+        loadSimilarProduct();
+    </script>
+</body>
+
+</html>

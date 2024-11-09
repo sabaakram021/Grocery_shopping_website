@@ -1,0 +1,22 @@
+.search-section{
+    padding: var(--pad2);
+    /* background: red; */
+    margin-top: 20px;
+}
+
+.search-box{
+    padding: 10px;
+    border-radius: 5px;
+    background: #F4F1F1;
+
+}
+.search-box input{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+}
+.search-box i{
+    font-size: 20px;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owlcarousel -->
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <link rel="stylesheet" href="../assets/css/checkout/checkout.css">
+    <link rel="stylesheet" href="../assets/css/popup.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="wrapper-overlay"></div>
+
+        <div class="header">
+            <p class="back">cancel</p>
+            <h3 class="title">Checkout</h3>
+        </div>
+
+        <div class="main">
+
+
+            <div class="order-summary checkout-field">
+                <h3>Order Summary</h3>
+
+                <div class="flex space-between checkout-data">
+                    <p class="checkout-title">Subtotal</p>
+                    <p class="subtotal">₹110</p>
+                </div>
+
+                <div class="flex space-between checkout-data">
+                    <p class="checkout-title">Delivery</p>
+                    <p class="delcharge">₹30</p>
+                </div>
+                <div class="flex space-between checkout-data">
+                    <p class="checkout-title">Coupon off</p>
+                    <p class="couponOff">-₹0</p>
+                </div>
+                <div class="flex space-between checkout-data">
+                    <p class="checkout-title">Total</p>
+                    <p class="grandtotal">₹140</p>
+                </div>
+
+            </div>
+
+
+            <div class="payment-section checkout-field">
+                <h3>Payment</h3>
+
+                <div class="flex justify-start checkout-data gap-30">
+
+                    <div class="flex gap-10">
+
+                        <div class="circle1 flex" onclick="selectPaymentMethode('online')">
+                            <div class="circle2  circle2online">
+
+                            </div>
+                        </div>
+
+                        <p>UPI</p>
+                        <img src="../assets/images/icon/upi.png" alt="upi">
+                    </div>
+
+
+
+                    <div class="flex gap-10 cod">
+
+                        <div class="circle1 flex" onclick="selectPaymentMethode('cash')">
+                            <div class="circle2 payment-choose circle2cash">
+
+                            </div>
+                        </div>
+
+                        <p>COD</p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="delivery-address checkout-field">
+                <div class="flex space-between">
+                    <h3>Shipping address</h3>
+
+                    <div class="flex gap-2 addAddress">
+                        <i class="ri-add-line"></i>
+                        <p>Add</p>
+                    </div>
+
+                    <div class="flex gap-2 editAddress">
+                        <p>Edit</p>
+                    </div>
+                </div>
+
+                <div class="address-data">
+
+                    <div class="flex space-between checkout-data">
+                        <p class="checkout-title">Name</p>
+                        <p class="username">Bharat Kumar</p>
+                    </div>
+
+                    <div class="flex space-between checkout-data">
+                        <p class="checkout-title">Mobile</p>
+                        <p class="mobileno">1234567890</p>
+                    </div>
+
+                    <div class="flex space-between checkout-data gap-30">
+                        <p class="checkout-title">Full address</p>
+                        <p class="address">Main Road, Ranchi</p>
+                    </div>
+
+                    <div class="flex space-between checkout-data gap-30">
+                        <p class="checkout-title">Pin Code</p>
+                        <p class="pincode">834001</p>
+                    </div>
+                    
+                    <!-- <div class="flex space-between checkout-data gap-30">
+                        <p class="checkout-title">Landmark</p>
+                        <p>Rospa Tower</p>
+                    </div> -->
+                    
+                    <div class="flex space-between checkout-data gap-30 ordernote-div" style="display: none;">
+                        <p class="checkout-title">Order Notes</p>
+                        <p class="ordernote"></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="address-data-fill">
+
+        <div class="address-cover">
+            <div class="cancel-address-cover flex">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <div class="input-field flex justify-start gap-10">
+                <i class="bi bi-person-circle"></i>
+                <input type="text" placeholder="Full Name" id="username">
+            </div>
+
+            <div class="input-field flex justify-start gap-10">
+                <i class="ri-phone-line"></i>
+                <input type="number" placeholder="Mobile" id="mobileno">
+            </div>
+
+            <div class="input-field flex justify-start gap-10">
+                <i class="ri-map-pin-line"></i>
+                <input type="text" placeholder="Address" id="address">
+            </div>
+            <div class="input-field flex justify-start gap-10">
+                <i class="ri-crosshair-2-line"></i>
+                <input type="number" placeholder="Pin Code" id="pincode">
+            </div>
+            <div class="input-field flex justify-start gap-10">
+                <i class="ri-crosshair-2-line"></i>
+                <input type="text" placeholder="Enter order notes (if you want)" id="orderNote">
+            </div>
+
+            <!-- <div class="input-field flex justify-start gap-10">
+                <i class="ri-map-pin-range-line"></i>
+                <input type="text" placeholder="Landmark">
+            </div> -->
+
+            <div class="btn">
+                <button onclick="saveAddress()">Save</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="checkout-btn">
+        <button onclick="checkOut()" class="checkoutbtn">
+            Checkout
+        </button>
+    </div>
+
+
+      <!-- popup -->
+
+      <div class="popup">
+
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- <script src="../assets/js/carousel.js"></script> -->
+    <script src="../assets/js/script.js"></script>
+    <script>
+        $(".addAddress ,.editAddress").click(() => {
+            $(".wrapper-overlay").addClass("wrapper-overlay-active");
+            $(".address-data-fill").addClass("add-data-active");
+        })
+        $(".cancel-address-cover").click(() => {
+            $(".wrapper-overlay").removeClass("wrapper-overlay-active");
+            $(".address-data-fill").removeClass("add-data-active");
+        })
+
+        var isdata = localStorage.getItem("address");
+        console.log("isdata", isdata);
+        if (isdata == null || isdata == "") {
+            $(".editAddress").hide();
+            $(".address-data").hide();
+        } else {
+            $(".addAddress").hide();
+        }
+
+        function saveAddress() {
+            $(".wrapper-overlay").removeClass("wrapper-overlay-active");
+            $(".address-data-fill").removeClass("add-data-active");
+            localStorage.setItem("address", true)
+            $(".address-data").show();
+            $(".addAddress").hide();
+            $(".editAddress").show();
+
+            $(".username").html($("#username").val());
+            $(".mobileno").html($("#mobileno").val());
+            $(".address").html($("#address").val());
+            $(".pincode").html($("#pincode").val());
+            $(".ordernote").html($("#orderNote").val());
+           if($("#orderNote").val() != '') {
+             $('.ordernote-div').show();
+           }else{
+            $('.ordernote-div').hide();
+           }
+        }
+
+        var subtotal = localStorage.setItem("payoption", 'cash');
+
+
+        var subtotal = localStorage.getItem("subtotal");
+        var total_amt = localStorage.getItem("total_amt");
+        var del_charge = localStorage.getItem("del_charge");
+        var couponOff = localStorage.getItem('coupon_value');
+        var city = localStorage.getItem("s_city");
+        var area = localStorage.getItem("s_area");
+        var pincode = localStorage.getItem("s_pincode");
+
+        var username = localStorage.getItem("username");
+        var mobile = localStorage.getItem("mobile");
+
+        $(".subtotal").html(`₹${subtotal}`);
+        $(".delcharge").html(`₹${del_charge}`);
+        $(".grandtotal").html(`₹${total_amt}`);
+        if(couponOff) {
+        $(".couponOff").html(`-₹${couponOff}`);
+        }
+
+        $(".username").html(username);
+        $(".mobileno").html(mobile);
+        $(".address").html(`${area} ${city}`);
+        $(".pincode").html(pincode);
+
+        $("#username").val(username);
+        $("#mobileno").val(mobile);
+        $("#address").val(`${area} ${city}`);
+        $("#pincode").val(pincode);
+        // $(".username").html(username);
+
+    </script>
+</body>
+
+</html>

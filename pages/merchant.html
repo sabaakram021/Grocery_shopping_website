@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owlcarousel -->
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <!-- <link rel="stylesheet" href="../assets/css/order/order.css"> -->
+    <!-- <link rel="stylesheet" href="../assets/css/profile/profile.css"> -->
+    <link rel="stylesheet" href="../assets/css/profile/merchant.css">
+    <link rel="stylesheet" href="../assets/css/profile/editprofile.css">
+    <link rel="stylesheet" href="../assets/css/popup.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="wrapper-overlay"></div>
+
+        <div class="header flex space-between">
+            <i class="ri-arrow-left-line back"></i>
+            <h3 class="title">Merchant Form</h3>
+            <!-- <i class="ri-pencil-line edit"></i> -->
+        </div>
+
+
+
+
+        <div class="main">
+
+            <!-- <div class="input-fields">
+                <label for="shop_img">
+                    <p>Shop Photo</p>
+                    <i class="ri-image-add-line"></i>
+                </label>
+                <input type="file" hidden id="shop_img">
+            </div> -->
+
+            <div class="input-field flex justify-start gap-20">
+                <input type="text" placeholder="First Name" id="MfirstNm">
+            </div>
+
+            <div class="input-field flex justify-start gap-20">
+                <input type="text" placeholder="Last Name" id="MlastNm">
+            </div>
+
+            <div class="input-field flex justify-start gap-20">
+                <input type="text" placeholder="Shop Name" id="MshopNm">
+            </div>
+
+            <div class="input-field flex justify-start gap-20">
+                <input type="email" placeholder="Bussiness email" id="MbusinessEmail">
+            </div>
+
+            <div class="input-field flex justify-start gap-20">
+                <input type="number" placeholder="Phone number" id="MbusinessPh">
+            </div>
+
+            <div class="input-field flex justify-start gap-20" >
+                <input type="text" placeholder="Street Address 1" id="MstreetAdd1">
+            </div>
+            <div class="input-field flex justify-start gap-20" >
+                <input type="text" placeholder="Street Address 2" id="MstreetAdd2">
+            </div>
+            <div class="input-field flex justify-start gap-20" >
+                <input type="text" placeholder="State" id="Mstate">
+            </div>
+            <div class="input-field flex justify-start gap-20" >
+                <input type="text" placeholder="City" id="Mcity">
+            </div>
+            <div class="input-field flex justify-start gap-20" >
+                <input type="text" placeholder="District" id="Mdistrict">
+            </div>
+            <div class="input-field flex justify-start gap-20" >
+                <input type="number" placeholder="Pin Code" id="MpinCode">
+            </div>
+
+            <div class="input-field flex justify-start gap-20" >
+                <input type="text" placeholder="Type Of Bussiness" id="MbusinessType">
+            </div>
+
+            <div class="input-field flex justify-start gap-20">
+                <!-- <i class="ri-layout-grid-line"></i> -->
+               <select name="" id="undercat">
+                <option value="0" selected disabled >Select Under Category</option>
+               </select>
+            </div>
+
+            <div class="input-field flex justify-start gap-20">
+                <input type="number" placeholder="Adhar Card No" id="MadharNo">
+            </div>
+
+            <div class="input-field flex justify-start gap-20" >
+                <input type="text" placeholder="Pan Card No" id="MpanNo">
+            </div>
+            
+            <div class="input-field flex justify-start gap-20 flex-col items-start">
+                <label for="">Shop Image</label>
+                <input type="file" id="MshopImg">
+            </div>
+
+            <div class="input-field flex justify-start gap-20 flex-col items-start">
+                <label for="">Adhar Card Photo</label>
+                <input type="file" id="MadharImg">
+            </div>
+
+            <div class="input-field flex justify-start gap-20 flex-col items-start">
+                <label for="">Pan Card Photo</label>
+                <input type="file" id="MpanImg">
+            </div>
+
+            <div class="input-field flex justify-start gap-20 flex-col items-start">
+                <label for="">Any Shop Document</label>
+                <input type="file" id="ManyShopImg">
+            </div>
+
+          
+
+
+            <div class="Apply-btn">
+                <button onclick="becomeMerchantReq()">
+                    Apply
+                </button>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="popup">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="../assets/js/carousel.js"></script> -->
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+
+        allCategoryList();
+
+    </script>
+
+</body>
+
+</html>

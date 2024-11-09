@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owlcarousel -->
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <link rel="stylesheet" href="../assets/css/login/login.css">
+    <link rel="stylesheet" href="../assets/css/popup.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="logo">
+        </div>
+
+        <div class="header">
+            <h3>Sign Up</h3>
+            <p>Find your daily need!</p>
+        </div>
+
+        <div class="main">
+            <div class="input-field flex justify-start gap-20">
+                <i class="bi bi-person-circle"></i>
+                <input type="text" placeholder="Full Name" id="fullname">
+            </div>
+            <div class="input-field flex justify-start gap-20">
+                <i class="bi bi-envelope"></i>
+                <input type="email" placeholder="Email address" id="email">
+            </div>
+            <div class="input-field flex justify-start gap-20">
+                <i class="ri-phone-line"></i>
+                <input type="number" placeholder="Phone number" id="mobile">
+            </div>
+            <div class="input-field flex justify-start gap-20">
+                <i class="ri-lock-password-line"></i>
+                <input type="text" placeholder="Password" id="password">
+            </div>
+
+            <!-- <div class="forget-password">
+                <h3>Forgot Password?</h3>
+            </div> -->
+
+
+            <div class="btn">
+                <button onclick="signUp()">Sign Up</button>
+            </div>
+
+            <div class="other flex gap-5">
+                <p>Already have an account?</p>
+                <h4 onclick="location.href='login.html'">Login</h4>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- popup -->
+
+    <div class="popup">
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="../cordova.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/fcm.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

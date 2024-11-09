@@ -1,0 +1,254 @@
+/* seller category header */
+
+.sellerCategory-header {
+    padding: var(--pad);
+    box-shadow: 0px 1.18px 4.71px 0px #00000040;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+
+}
+
+.cat-name {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+/* right side section */
+
+.rightside {
+    width: 100%;
+    padding-left: 20%;
+    padding-top: 62px;
+    padding-bottom: 60px;
+    background: var(--bg-clr);
+    /* position: relative; */
+}
+
+.right-header {
+    padding: 10px 10px;
+    font-size: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.sort,
+.allcat {
+    box-shadow: 0px 0px 3.14px 0px #000000A3;
+    border-radius: 4px;
+    padding: 3px 9px;
+}
+
+.category-banner{
+    width: 100%;
+   
+    overflow: hidden;
+    padding: 0px 10px;
+}
+.category-banner img{
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 330/141;
+}
+
+.newly-launch-grid {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 10px 10px;
+}
+
+.newly-launch-grid::-webkit-scrollbar {
+    width: 0px;
+}
+
+.newly-launch-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.newly-launch-product {
+    width: 40%;
+}
+
+.newly-launch-product-img {
+    width: 100%;
+    padding: 10px;
+    /* background: #B1EABE; */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2.4px 0px #00000061;
+    position: relative;
+    overflow: hidden;
+}
+
+.newly-launch-product-img img {
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+
+.newly-launch-product-name p {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    font-size: 9px;
+}
+
+.newly-launch-product-rating-qty p {
+    font-size: 7px;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.rating {
+    font-size: 9px;
+}
+
+.rating p {
+    font-size: 9px;
+    font-weight: 500;
+    color: #000;
+    margin-right: 5px;
+}
+
+.rating i {
+    color: #DEDDDD;
+}
+
+.israting {
+    color: #FFCC05 !important;
+}
+
+.newly-launch-product-price {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.newly-fake-price {
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.addtocart {
+    padding: 4px 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 8px;
+    color: #0EB96B;
+    box-shadow: 0px 0px 2px 0px #0EB96B;
+    border-radius: 5px;
+}
+
+.best-offer {
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    /* background: #FFCC05; */
+    font-size: 7px;
+    padding: 5px 5px;
+    background: url(../../images/icon/offer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.whislistbtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #DEDDDD;
+    font-size: 20px;
+}
+
+.popular-product {
+    padding: var(--pad);
+    padding-bottom: 60px;
+}
+
+.product-box {
+    width: 48%;
+    min-width: 48%;
+}
+
+
+
+/* left section */
+.leftside {
+    width: 20%;
+    min-height: calc(100vh);
+    max-height: calc(100vh);
+    overflow-y: scroll;
+    box-shadow: 0px 1.18px 4.71px 0px #00000040;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background: #fff;
+}
+
+.leftside::-webkit-scrollbar {
+    width: 0px;
+}
+
+.subcategory-box {
+    width: 100%;
+    position: relative;
+}
+
+.sub-box {
+    width: 90%;
+    min-width: 90%;
+}
+
+.sub-box-img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: var(--bg3-clr);
+    padding: 10px;
+}
+
+.sub-box-img img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.sub-cat-name {
+    font-size: 10px;
+    width: 100%;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+
+.subcatactive-div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    width: 4px;
+    border-radius: 12px 0px 0px 12px;
+}
+.subcatactive {
+    background: #0EB96B;
+}

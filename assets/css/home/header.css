@@ -1,0 +1,14 @@
+
+nav{
+    padding: var(--pad);
+}
+.user-icon img{
+width: 27px;
+}
+.user-icon i{
+    font-size: 30px;
+    color: green;
+}
+.user-data p{
+    font-weight: 600;
+}

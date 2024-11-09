@@ -1,0 +1,162 @@
+.wrapper{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #F5F5F5;
+}
+
+.header-section{
+    padding: var(--pad);
+    position: relative;
+}
+.header-section i{
+    font-size: 30px;
+}
+.header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main{
+    padding: var(--pad2);
+}
+
+
+
+
+/* product style */
+.newly-launch {
+    padding: 0px calc(5% -5px);
+}
+
+.newly-launch-grid {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 5px 5px;
+}
+
+.newly-launch-grid::-webkit-scrollbar {
+    width: 0px;
+}
+
+.newly-launch-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.newly-launch-product {
+    width: 40%;
+}
+
+.newly-launch-product-img {
+    width: 100%;
+    padding: 10px;
+    /* background: #B1EABE; */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2.4px 0px #00000061;
+    position: relative;
+    overflow: hidden;
+}
+
+.newly-launch-product-img img {
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+
+.newly-launch-product-name p {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.newly-launch-product-rating-qty p {
+    font-size: 7px;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.rating {
+    font-size: 9px;
+}
+
+.rating p {
+    font-size: 9px;
+    font-weight: 500;
+    color: #000;
+    margin-right: 5px;
+}
+
+.rating i {
+    color: #DEDDDD;
+}
+
+.israting {
+    color: #FFCC05 !important;
+}
+
+.newly-launch-product-price {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.newly-fake-price {
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.addtocart {
+    padding: 4px 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 8px;
+    color: #0EB96B;
+    box-shadow: 0px 0px 2px 0px #0EB96B;
+    border-radius: 5px;
+}
+
+.best-offer{
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    /* background: #FFCC05; */
+    font-size: 7px;
+    padding: 5px 5px;
+    background: url(../../images/icon/offer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.whislistbtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #DEDDDD;
+    font-size: 20px;
+}
+
+.popular-product{
+    padding: var(--pad);
+    padding-bottom: 60px;
+}
+
+.product-box{
+    width: 48%;
+    min-width: 48%;
+}
+
+.catsearch{
+    margin-bottom: 10px;
+}

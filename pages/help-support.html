@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owlcarousel -->
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <!-- <link rel="stylesheet" href="../assets/css/order/order.css"> -->
+    <link rel="stylesheet" href="../assets/css/profile/profile.css">
+    <link rel="stylesheet" href="../assets/css/profile/editprofile.css">
+    <link rel="stylesheet" href="../assets/css/help.css">
+    <link rel="stylesheet" href="../assets/css/popup.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="wrapper-overlay"></div>
+
+        <div class="header flex space-between">
+            <i class="ri-arrow-left-line back"></i>
+            <h3 class="title">Help And Support</h3>
+            <!-- <i class="ri-pencil-line edit"></i> -->
+        </div>
+
+
+      
+
+        <div class="help-page wraper">
+
+           
+    
+           <div class="upper">
+    
+           </div>
+    
+           <div class="cloud">
+            <img src="../assets/images/icon/clouds2.png" alt="cloud">
+           </div>
+           <div class="chat">
+            <img src="../assets/images/icon/help2.png" alt="help" >
+           </div>
+          
+           <div class="contatct">
+            <div class="head-line">
+                <p>How can we help <br>
+                    you today?</p>
+            </div>
+            <div class="info">
+                <i class="bi bi-telephone-fill"></i>
+                <div id="phoneNumbers">
+                    <!-- <a href="tel:9241723227">+91-9241723227</a>/
+                    <a href="tel:6101197907">+91-6101197907</a> -->
+                </div>
+            </div>
+    
+            <div class="info">
+                <i class="bi bi-whatsapp"></i>
+                <div id="waNumber">
+                    <!-- <a href="https://wa.me/9241723227">+91-9241723227</a>/
+                    <a href="https://wa.me/7484884014">+91 7484884014</a> -->
+                </div>
+            </div>
+    
+            <div class="info">
+                <i class="bi bi-envelope-at-fill"></i>
+                <div id="mailCon">
+                    <!-- <a href="mailto:business@impulsewebsolution.com">business@impulsewebsolution.com</a> -->
+                   
+                </div>
+            </div>
+    
+           </div>
+    
+    
+    
+    
+    
+    
+    
+    
+        </div>
+    
+
+
+
+
+    </div>
+
+
+
+  
+
+
+   
+
+
+
+
+     <!-- popup -->
+
+     <div class="popup">
+
+     </div>
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.7.1.js"
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- <script src="../assets/js/carousel.js"></script> -->
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+
+
+        $(".edit").click(() => {
+            $(".wrapper-overlay").addClass("wrapper-overlay-active");
+            $(".edit-profile").addClass("edit-profile-active");
+        })
+        $(".pofile-cancle").click(() => {
+            $(".wrapper-overlay").removeClass("wrapper-overlay-active");
+            $(".edit-profile").removeClass("edit-profile-active");
+        })
+       
+
+        var username = localStorage.getItem("username");
+        var mobile = localStorage.getItem("mobile");
+        $(".username").html(username);
+        $("#username").val(username);
+        $("#mobile").val(mobile);
+        $(".mobile").html(mobile);
+
+        loadAdminContactData();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+
+.popup{
+    position: fixed;
+    opacity: 0;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: 0px 5%; */
+    background: var(--main-clr);
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px #0000003e;
+    color: #fff;
+    font-size: 14px;
+    transition: all .4s ease-in-out;
+    text-wrap: wrap;
+    text-transform: capitalize;
+    z-index: 999;
+}
+.popup-active{
+    opacity: 1;
+    bottom: 20px;
+
+}

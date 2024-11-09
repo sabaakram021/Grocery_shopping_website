@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owlcarousel -->
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <link rel="stylesheet" href="../assets/css/cart/cart.css">
+    <link rel="stylesheet" href="../assets/css/cart/coupon.css">
+    <link rel="stylesheet" href="../assets/css/popup.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="wrapper-overlay"></div>
+
+        <div class="header">
+            <i class="ri-arrow-left-line back"></i>
+            <h3 class="title">Cart</h3>
+        </div>
+
+        <div class="main">
+            <div class="order-grid cartgrid">
+
+                
+
+              
+
+
+            </div>
+        </div>
+
+
+        <footer class="footer">
+
+            <div class="cart flex gap-20 space-between">
+                <p class="cart-fotter-title">
+                    Subtotal
+                </p>
+                <div class="line"></div>
+
+                <p class="total-title ">
+                    ₹ <span class="subtotal"></span>
+                </p>
+
+            </div>
+
+            <div class="cart flex gap-20 space-between">
+                <p class="cart-fotter-title">
+                    Shipping
+                </p>
+                <div class="line"></div>
+
+                <p class="Shipping">
+                    <!-- Free -->
+                    <span>₹</span>
+                    <span class="Shippingcharge">00</span>
+                </p>
+
+            </div>
+
+            <div class="cart flex gap-20 space-between">
+                <p class="cart-fotter-coupon">
+                    Apply Coupon
+                </p>
+               
+                <p class="select">
+                    Select
+                </p>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-btn flex space-between">
+                <button onclick="continueCheckout()">CONTINUE</button>
+
+               <div class="flex gap-10">
+                <p class="grandTotatlTitle">TOTAL</p>
+                <p class="grandTotal">₹ <span class="gtotal">00</span></p>
+               </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+<!-- coupon -->
+
+<div class="coupon">
+
+    <div class="coupon-layer">
+        <div class="cancel flex">
+         <i class="ri-close-large-line"></i>
+        </div>
+
+   
+    <div class="coupon-header">
+        <p>Apply Coupon</p>
+    </div>
+    <div class="coupon-body-field" id="coupon-body-field">
+        <label for="couponval">Enter coupon Code</label>
+        <input type="text" id="couponval" placeholder="Coupon Code">
+        <input onclick="applyCoupon()" type="button" value="Apply Coupon">
+    </div>
+    <p class="couponor">--Or Select Coupon Code--</p>
+    <div class="coupon-body">
+
+       
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+
+
+  <!-- popup -->
+
+  <div class="popup">
+
+  </div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+        $(".select").click(()=>{
+            // location.reload();
+            $(".coupon").addClass("coupon-active");
+            $(".wrapper-overlay").addClass("wrapper-overlay-active");
+        })
+        $(".cancel").click(()=>{
+            $(".coupon").removeClass("coupon-active");
+            $(".wrapper-overlay").removeClass("wrapper-overlay-active");
+        })
+
+        loadCartItem(); loadAllCuopon();
+        localStorage.removeItem("coupon_id");
+        localStorage.removeItem("coupon_name");
+        localStorage.removeItem("coupon_value");
+    </script>
+
+</body>
+
+</html>

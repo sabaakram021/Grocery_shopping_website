@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo App For multi Vendor</title>
+    <link rel="shortcut icon" href="#">
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owlcarousel -->
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/search.css">
+    <link rel="stylesheet" href="../assets/css/home/header.css">
+    <link rel="stylesheet" href="../assets/css/home/category.css">
+    <link rel="stylesheet" href="../assets/css/home/banner.css">
+    <link rel="stylesheet" href="../assets/css/home/home.css">
+    <link rel="stylesheet" href="../assets/css/home/upper-part.css">
+    <link rel="stylesheet" href="../assets/css/custom/derive.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/popup.css">
+    <link rel="stylesheet" href="../assets/css/appupdate.css">
+    <link rel="stylesheet" href="../assets/css/changelocation.css">
+</head>
+
+<body>
+    <div class="warpper-overlay"></div>
+    <div class="warpper">
+        <div class="loder">
+            <div class="loader">
+
+            </div>
+        </div>
+
+        <div class="mainlayer">
+
+            <div class="upper">
+                <div class="upper-img">
+
+                </div>
+
+                <header>
+                    <nav class="flex space-between">
+                        <div class="user-data">
+                            <p>Deliver To</p>
+                            <p class="del_address"></p>
+                        </div>
+                        <div class="user-icon flex justify-start gap-5">
+                            <div class="whatsappiconhome">
+                                <i class="ri-whatsapp-line"></i>
+                            </div>
+                            <img src="../assets/images/icon/user.svg" alt="user">
+                        </div>
+                    </nav>
+                </header>
+
+                <div class="search-section">
+                    <div class="search-box flex gap-15">
+                        <i class="ri-search-line"></i>
+                        <input type="search" placeholder="search product" id="searchproduct" onkeyup="searchProduct()">
+                        <!-- <i class="ri-equalizer-line"></i> -->
+                    </div>
+                    <div class="search-result">
+
+                    </div>
+                </div>
+
+
+                <div class="category-section">
+                    <div class="category-header">
+
+                    </div>
+
+                    <div class="category-grid flex gap-15 flex-warp space-between">
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- vendor category -->
+            <div class="vendor-category flex space-between gap-10  items-start ">
+
+
+
+
+            </div>
+
+
+            <div class="banner-section flex owl-carousel owl-theme" id="first-banner">
+
+            </div>
+
+
+            <!-- daily deals -->
+
+            <!-- <div class="daily-deals ">
+                <div class="daily-deals-header flex space-between">
+                    <h3>Daily Deals</h3>
+                    <p onclick="viewAllCat()">View all</p>
+                </div>
+
+                <div class="dialy-deals-grid flex flex-warp  items-start justify-start">
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div> -->
+
+
+            <!-- Offers on Top Products -->
+
+            <div class="top-products">
+                <div class="top-product-header flex justify-start">
+                    <h3>Offers on Top Products</h3>
+                </div>
+                <div class="top-roduct-grid offereventgrid gap-10 flex justify-start">
+
+
+                </div>
+            </div>
+
+
+            <!-- newly launch -->
+
+            <div class="newly-launch">
+                <div class="newly-launch-header flex justify-start">
+                    <h3>Newly Launch</h3>
+                </div>
+
+                <div class="newly-launch-grid flex justify-start gap-10">
+
+
+
+                </div>
+
+            </div>
+
+
+            <!-- occasionaly banner -->
+
+            <div class="occasionally-banner owl-carousel owl-theme">
+                <!-- <img src="../assets/images/banner/occasion.png" alt="img"> -->
+            </div>
+
+
+            <!-- best seller -->
+
+            <div class="best-seller">
+                <div class="best-seller-header">
+                    <h3>Best Seller</h3>
+                </div>
+
+                <div class="best-seller-grid flex gap-10 justify-start">
+
+                    <!-- 
+                <div class="best-seller-box">
+                    <div class="best-seller-img">
+                        <img src="../assets/images/best-seller/2.jpeg" alt="img">
+                    </div>
+                    <div class="best-seller-info flex space-between">
+                        <p class="best-seller-name">RBS Cosmetic Shop</p>
+
+                        <div class="flex gap-2 best-seller-rating">
+                            <i class="ri-star-s-fill israting"></i>
+                            <p>4.3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-seller-box">
+                    <div class="best-seller-img">
+                        <img src="../assets/images/best-seller/2.jpeg" alt="img">
+                    </div>
+                    <div class="best-seller-info flex space-between">
+                        <p class="best-seller-name">RBS Cosmetic Shop</p>
+
+                        <div class="flex gap-2 best-seller-rating">
+                            <i class="ri-star-s-fill israting"></i>
+                            <p>4.3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-seller-box">
+                    <div class="best-seller-img">
+                        <img src="../assets/images/best-seller/2.jpeg" alt="img">
+                    </div>
+                    <div class="best-seller-info flex space-between">
+                        <p class="best-seller-name">RBS Cosmetic Shop</p>
+
+                        <div class="flex gap-2 best-seller-rating">
+                            <i class="ri-star-s-fill israting"></i>
+                            <p>4.3</p>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                </div>
+
+            </div>
+
+
+            <!-- top rated -->
+
+            <div class="top-rated">
+                <div class="top-rated-header">
+                    <h3>TOP RATED</h3>
+                </div>
+                <div class="top-rated-grid flex space-between gap-10 flex-warp">
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <footer class="flex space-between footerdiv">
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-home-3-line"></i>
+                <p>Home</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-grid-fill"></i>
+                <p>Category</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-service-line"></i>
+                <p>service</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2 ">
+                <i class="ri-heart-line"></i>
+                <p>Wishlist</p>
+            </div>
+            <div class="footer-icon flex flex-col gap-2">
+                <div class="count">0</div>
+                <i class="ri-shopping-cart-line"></i>
+                <p>Cart</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- popup -->
+
+    <div class="popup">
+
+    </div>
+
+
+
+
+    <div class="appupdate">
+        <div class="app_photo">
+            <img src="../assets/images/logo.png" alt="img">
+        </div>
+        <div class="update-para">
+            <p>new version of app is available</p>
+        </div>
+        <div class="updatebtn1div">
+            <button class="updatebtn updatebtn1" onclick="updateApp()">Update App</button>
+        </div>
+        <button class="updatebtn updatebtn2" onclick="remindmelater()">remind me latter</button>
+    </div>
+
+
+    <div class="change-location">
+        <div class="change-location-heder">
+            <div class="change-location-cancel">
+                <i class="ri-close-large-line"></i>
+            </div>
+        </div>
+        <div class="main">
+            <div class="input-field flex justify-start gap-20">
+                <select name="" id="scity" onchange="selectCity()">
+                    <option value="" selected disabled hidden>select city</option>
+                </select>
+            </div>
+
+            <div class="input-field flex justify-start gap-20">
+                <select name="" id="sarea" onchange="selectArea()">
+                    <option value="" selected disabled hidden>select area</option>
+                </select>
+            </div>
+
+            <input type="text" id="s_city_id" hidden>
+            <input type="text" id="s_city" hidden>
+
+            <input type="text" id="s_area" hidden>
+            <input type="text" id="s_pincode" hidden>
+
+
+
+
+            <div class="btn">
+                <button onclick="locationChoosed('update')">Update</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+    <script>
+        loginStatusCheck();
+        backGroundWorker();
+        loadupperbanner();
+        loadLowerbanner();
+        loadBestSeller();
+        loadtopRatedProduct();
+
+        var city = localStorage.getItem("s_city");
+        if (city == null) {
+            loaduserdeatils();
+        }
+        var area = localStorage.getItem("s_area");
+        var pincode = localStorage.getItem("s_pincode");
+
+        $(".del_address").html(`${area} ${city} , ${pincode} <i class="ri-arrow-down-s-line"></i>`);
+
+        const viewAllCat = () => {
+            $(".dailydealsbox:nth-child(n + 9)").css("display", 'flex');
+            var element = document.querySelector(".dailydealsbox:nth-child(n + 9)");
+            element.scrollIntoView({ behavior: "smooth" });
+
+        }
+
+        $(".del_address").click(() => {
+            loadallCity();
+            $(".change-location").addClass("change-location-active");
+            $(".warpper-overlay").addClass("warpper-overlay-active");
+        })
+        $(".change-location-cancel").click(() => {
+            $(".change-location").removeClass("change-location-active");
+            $(".warpper-overlay").removeClass("warpper-overlay-active");
+        })
+        var searchbtn = document.getElementById("searchproduct");
+        searchbtn.addEventListener("focus", function(){
+            $(".footerdiv").hide();
+        });
+        searchbtn.addEventListener("blur", function(){
+            $(".footerdiv").show();
+        });
+        
+     
+        
+
+        checkUpdate();
+        loadCartCount();
+        loadAdminContactData();
+    </script>
+</body>
+
+</html>

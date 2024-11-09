@@ -1,0 +1,169 @@
+.header {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+/* seller section */
+
+.seller {
+    padding: var(--pad2);
+}
+
+.seller-grid {
+    overflow: hidden;
+    /* overflow-x: auto; */
+    padding: 5px 0px;
+    flex-wrap:wrap;
+}
+
+.seller-grid::-webkit-scrollbar {
+    width: 0px;
+}
+
+.seller-box {
+    /* width: 60%; */
+    width: 48%;
+    /* min-width: 60%; */
+    min-width: 45%;
+    aspect-ratio: 244/272;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.seller-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 118.62%);
+}
+
+.seller-box img {
+    width: 100%;
+    aspect-ratio: 244/272;
+}
+
+.seller-info {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    /* width: 100%; */
+    text-align: center;
+    z-index: 9;
+}
+
+.seller-name {
+    background: #0EB96B;
+    text-wrap: nowrap;
+    padding: 2px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.seller-offer {
+    color: #fff;
+    font-size: 13px;
+}
+
+/* banner section */
+
+.category-banner {
+    width: 100%;
+}
+
+.category-banner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* shop by sub category */
+
+.shopbysubcategory {
+    padding: var(--pad2);
+}
+
+.dialy-deals-grid {
+    /* padding: var(--pad2); */
+    width: 100%;
+    gap: 2%;
+}
+
+.deals-box {
+    width: 23%;
+    min-width: 23%;
+    aspect-ratio: 91/84;
+    margin-bottom: 10px;
+}
+
+.deals-img {
+    width: 100%;
+    background: #B1EABE;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.deals-img img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.deals-name {
+    width: 100%;
+    /* background: red; */
+}
+
+.deals-name p {
+    width: 100%;
+    max-width: 100%;
+    text-wrap: wrap;
+    font-size: 10px;
+    padding: 0px 10px;
+    text-align: center;
+    max-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* best deal */
+.best-deal {
+    padding: var(--pad2);
+    padding-bottom: 50px;
+}
+
+.viewall {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.viewall i {
+    font-size: 17px;
+}
+
+.newly-launch {
+    padding: 0px calc(5% -5px);
+}
+
+.newly-launch-grid {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 5px 5px;
+}
+
+.newly-launch-grid::-webkit-scrollbar {
+    width: 0px;
+}
+
+.newly-launch-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
